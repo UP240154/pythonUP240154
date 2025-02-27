@@ -1,0 +1,2 @@
+prim="Thirty"
+sec="days"

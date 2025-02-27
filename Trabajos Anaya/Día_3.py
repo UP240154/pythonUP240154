@@ -1,6 +1,6 @@
-age = int(input("Escribe tu edad "))
+age = int(input("Coloca tu edad "))
 print("")
-height = float(input("Escribe tu altura "))
+height = float(input("Coloca tu altura "))
 print("")
 ##3
 complex = complex(input("Numero complejo "))
@@ -8,34 +8,34 @@ complex = complex(input("Numero complejo "))
 ##4 Triangle
 print("")
 base = int(input("Ingresa la base de tiengulo "))
-heightT = int(input("Ingresa la altura del triangulo "))
-area = float((base * heightT)/2)
+alturaT = int(input("Ingresa la altura del triangulo "))
+area = float((base * alturaT)/2)
 print("El area de tu triangulo es: ", area)
 
 ##5 Perimeter
 print("")
-lado1 = int(input("El primer lado es: "))
-lado2 = int(input("El segundo lado es: "))
-lado3 = int(input("El tercer lado es: "))
-perimeter = lado1 + lado2 + lado3
+side1 = int(input("El primer lado es: "))
+side2 = int(input("El segundo lado es: "))
+side3 = int(input("El tercer lado es: "))
+perimeter = side1 + side2 + side3
 print("El perimetro del triangulo es de: ", perimeter)
 
 ##6 Length and Width
 print("")
-Length = int(input("Ingresa el valor del largo: ")) ##Largo
-Width = int(input("Ingresa el valor del ancho: ")) ##Ancho
-area1 = Length * Width
-perimeter1 = 2 * (Length + Width)
-print("El perimetro es de: ", perimeter1)
+Largo = int(input("Ingresa el valor del largo: ")) 
+Ancho = int(input("Ingresa el valor del ancho: ")) 
+area_1 = Largo * Ancho
+perimeter_1 = 2 * (Largo + Ancho)
+print("El perimetro es de: ", perimeter_1)
 
 ##7 Radius
 print("")
-radius = float(input("Ingresa la circunferencia de tu circulo: "))
+radio = float(input("Ingresa la circunferencia de tu circulo: "))
 pi = float(3.1416)
-areac = float(pi * radius * radius)
-circunference = float(2 * pi * radius)
-print("Tu area es de: ", areac)
-print("Tu circunferencia es de: ", circunference)
+areacir = float(pi * radio * radio)
+circunferencia = float(2 * pi * radio)
+print("Tu area es de: ", areacir)
+print("Tu circunferencia es de: ", circunferencia)
 
 ##8 Slope
 print("")
@@ -52,8 +52,8 @@ x1 = 2
 x2 = 6
 y1 = 2
 y2 = 10
-distance = ((x2 - x1)**2 + (y2-y1)**2)**0.5
-print("La distancia entre los dos puntos es: ", distance)
+distancia = ((x2 - x1)**2 + (y2-y1)**2)**0.5
+print("La distancia entre los dos puntos es: ", distancia)
 slope = (y2 - y1) / (x2 - x1)
 print("The slope is: ", slope)
 
@@ -152,9 +152,9 @@ salario = hours * rate
 print("Tu salario es de ", "|", salario, "|" )
 
 ##22 
-years = int(input("Cuantos anos tienes? "))
-seconds = (365 * (3600*24))
-total = (years * seconds)
+años = int(input("Cuantos anos tienes? "))
+segundo = (365 * (3600*24))
+total = (años * segundo)
 print("Tu tienes un total de:", total, "segundos")
 
 ##23
