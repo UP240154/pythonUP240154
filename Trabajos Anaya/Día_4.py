@@ -11,4 +11,6 @@ C="Coding_"
 fo="for_"
 A="all_"
 CfoA= C+fo+A
-print(CfoA)
+print (CfoA)
+
+##
