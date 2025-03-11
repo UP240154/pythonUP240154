@@ -84,6 +84,9 @@ print(it_companies.remove('Oracle'))
 print(it_companies.remove('Amazon'))
 
 ##
+del (it_companies)
+
+##
 ront_end=['HTML', 'CSS', 'JS', 'React', 'Redux']
 back_end=['Node', 'Express', 'MongoDB']
 total=ront_end+back_end
