@@ -28,4 +28,8 @@ print(list(Alumno.values()))
 print(list(Alumno.items()))
 
 ##
-del 
+del Alumno['Estado civil']
+print(Alumno)
+
+##
+del Alumno
