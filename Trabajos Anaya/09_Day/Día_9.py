@@ -34,6 +34,7 @@ else:
     print(b, "is greater than", a)
 
 ##Level 2
+##
 cal = {
     'A': range(80, 101),
     'B': range(70, 80),
@@ -51,3 +52,59 @@ for key, val in cal.items():
 
 print(grade)
 
+##
+season = {
+    'winter': 'December, January, February',
+    'spring': 'March, April, May',
+    'summer': 'June, July, August',
+    'autumn': 'September, October, November'
+}
+
+month = input('Enter the month: ')
+for key, val in season.items():
+    if month in val:
+        print(key)
+        break
+
+##
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruit=input("Enter a fruit")
+if fruit in fruits:
+    print("That fruit already exist in the list")
+else:
+    fruits.append(fruit)
+    print(fruits)
+
+##
+person={
+    'first_name': 'Asabeneh',
+    'last_name': 'Yetayeh',
+    'age': 250,
+    'country': 'Finland',
+    'is_marred': True,
+    'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address': {
+        'street': 'Space street',
+        'zipcode': '02210'
+}}
+if 'skills' in person:
+    if 'skills' in person:
+        skills = person['skills']
+        middle_index = len(skills) // 2
+        print(skills[middle_index])
+    if 'Python' in skills:
+        print("Python is in the skills")
+    else:
+        print("Python is not in the skills")
+
+if 'JavaScript' in skills and 'React' in skills and len(skills) == 2:
+        print('He is a front end developer')
+elif 'Node' in skills and 'Python' in skills and 'MongoDB' in skills:
+        print('He is a backend developer')
+elif 'React' in skills and 'Node' in skills and 'MongoDB' in skills:
+        print('He is a fullstack developer')
+else:
+        print('unknown title')
+
+if person['is_marred'] and person['country'] == 'Finland':
+    print(f"{person['first_name']} {person['last_name']} lives in {person['country']}. He is married.")
