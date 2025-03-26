@@ -19,6 +19,10 @@ print(len(Alumno))
 print(list(Alumno['Habilidades']))
 
 ##
+Alumno['Habilidades']='Maromas, Saltar, Correr'
+print(Alumno)
+
+##
 print(list(Alumno.keys()))
 
 ##
