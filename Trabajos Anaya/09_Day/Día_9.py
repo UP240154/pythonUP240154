@@ -34,4 +34,20 @@ else:
     print(b, "is greater than", a)
 
 ##Level 2
+cal = {
+    'A': range(80, 101),
+    'B': range(70, 80),
+    'C': range(60, 70),
+    'D': range(50, 60),
+    'F': range(0, 50)
+}
+
+cali = int(input('Cuál es tu calificación?'))
+grade = None
+for key, val in cal.items():
+    if cali in val:
+        grade = key
+        break
+
+print(grade)
 
