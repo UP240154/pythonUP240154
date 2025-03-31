@@ -40,4 +40,18 @@ while num<11:
     num=num + 1
 
 ##
-   
+nom=['Python', 'Numpy','Pandas','Django', 'Flask'] 
+for i in nom:
+    print(i)
+
+##
+for i in range(101):
+    if i%2==0:
+        print(i)
+
+for i in range(101):
+    if i%2!=0:
+        print(i)
+
+##Level 2
+
