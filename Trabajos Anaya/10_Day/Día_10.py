@@ -77,4 +77,20 @@ for i in range(101):
 print(sum)
 
 ##Level 3
+
 ##
+from lista_paises import countries
+
+paisesland=[countries for countries in countries if 'land' in countries]
+print(paisesland)
+
+##
+fruits = ['banana', 'orange', 'mango', 'lemon']
+conteo=-1
+for i in fruits:
+    print(fruits[conteo])
+    conteo=conteo -1
+
+
+
+
