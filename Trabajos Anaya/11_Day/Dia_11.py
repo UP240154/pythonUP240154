@@ -62,3 +62,15 @@ def reverse_list(lst):
 print (reverse_list([1,2,3,4,5]))
 
 ##
+def capitalize_list(lista):
+    return [i.upper() for i in lista]
+print (capitalize_list(['Potato', 'Tomato', 'Mango', 'Milk']))
+
+##
+def add_item(comida):
+    food_staff=['Potato', 'Tomato', 'Mango', 'Milk']
+    return (food_staff.append(add_item(comida)))
+
+print(add_item('meat'))
+
+
