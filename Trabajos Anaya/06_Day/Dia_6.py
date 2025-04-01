@@ -52,3 +52,6 @@ nordic_countries = ('Denmark', 'Finland','Iceland', 'Norway', 'Sweden')
 
 'Estonia' in nordic_countries
 'Iceland' in nordic_countries
+
+
+print("Revisado")

@@ -69,3 +69,5 @@ for item in oracion:
         l1.append(item)
 
 print(count)
+
+print("Revisado")
