@@ -92,5 +92,28 @@ for i in fruits:
     conteo=conteo -1
 
 
+##
+from countries_data import countries_1
+
+all_languages = set()
+for country in countries_1:
+    all_languages.update(country['languages'])
+total_languages = len(all_languages)
+print("Total number of languages:", total_languages)
 
 
+##
+language_count = {}
+for country in countries_1:
+    for language in country['languages']:
+        language_count[language] = language_count.get(language, 0) + 1
+
+most_spoken_languages = sorted(language_count.items(), key=lambda x: x[1], reverse=True)[:10]
+print("Ten most spoken languages:")
+for language, count in most_spoken_languages:
+    print(f"{language}: {count}")
+
+most_populated_countries = sorted(countries_1, key=lambda x: x['population'], reverse=True)[:10]
+print("Ten most populated countries:")
+for country in most_populated_countries:
+    print(f"{country['name']}: {country['population']}")
