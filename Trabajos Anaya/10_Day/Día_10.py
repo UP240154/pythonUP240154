@@ -24,12 +24,12 @@ while gato<8:
     gato=gato + 1
 
 ##
-fila=0
+fila=8
 columna=8
 
 for i in range(fila):
     for j in range(columna):
-        print('#', end='')
+        print('#', end=' ')
     print()
 
 ##

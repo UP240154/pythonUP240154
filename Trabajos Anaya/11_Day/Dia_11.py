@@ -99,6 +99,56 @@ def sum_of_odds(num1):
 print(sum_of_odds(100))
 
 ##
-                
+def sum_of_even(num):
+    total = 0
+    for i in range(num + 1):
+        if i % 2 == 0:
+            total += i
+    return total
+
+print(sum_of_even(100))
+
+##Level 2
+##
+def even_and_odds(nums):
+    even = 0
+    odd = 0
+    for i in range(nums+1):
+        if i % 2 == 0:
+            even += 1
+        else:
+            odd += 1
+    return 'The number of evens are: ', even, 'The number of odds are: ', odd
+print(even_and_odds(100))
+
+##
+def factorial(fac):
+    numb=1
+    for i in range(1,fac+1):
+        numb=i*numb
+    return numb
+print (factorial(5))
+
+##
+def is_empty(lst):
+    if len(lst) == 0:
+        return True
+print (is_empty([]))
+
+##
+def calc_mean(nums):
+    total_media=0
+    for i in nums:
+        total_media=total_media+i
+    return total_media/len(nums)
+print (calc_mean([1,2,3,4,5,5]))
+
+def calc_moda(nums):
+
+##Level 3
+##
+
+    
+
 
 
