@@ -141,14 +141,16 @@ def calc_mean(nums):
     for i in nums:
         total_media=total_media+i
     return total_media/len(nums)
-print (calc_mean([1,2,3,4,5,5]))
+print (calc_mean([1,2,3,4,5,5,5]))
+
+def calc_mediana(nums):
+    mediana=nums[int(len(nums)/2)]
+    return mediana
+print (calc_mediana([1,2,3,4,5,5,5]))
 
 def calc_moda(nums):
-
-##Level 3
-##
-
-    
-
-
+    from collections import Counter
+    calc_mode=Counter(nums)
+    return calc_mode.most_common(1)
+print(calc_moda([1,2,3,4,5,5,5]))
 
