@@ -67,10 +67,38 @@ def capitalize_list(lista):
 print (capitalize_list(['Potato', 'Tomato', 'Mango', 'Milk']))
 
 ##
-def add_item(comida):
+def add_item(food_staff,comida):
     food_staff=['Potato', 'Tomato', 'Mango', 'Milk']
-    return (food_staff.append(add_item(comida)))
+    food_staff.append(comida)
+    return food_staff
 
-print(add_item('meat'))
+print(add_item(['Potato', 'Tomato', 'Mango', 'Milk'], 'Pasta'))
+
+##
+def remove_item(food_stuff,comida):
+    food_stuff=['Potato', 'Tomato', 'Mango', 'Milk']
+    food_stuff.remove(comida)
+    return food_stuff
+print (remove_item(['Potato', 'Tomato', 'Mango', 'Milk'], 'Milk'))
+
+##
+def sum_num(num1):
+    for i in range(num1+1):
+        for j in range(num1):
+            i=i+j
+    return i
+print(sum_num(100))
+
+##
+def sum_of_odds(num1):
+    for i in range(num1+1):
+        for j in range(num1):
+            if i%2==0 and j%2==0:
+                i=i+j
+    return i
+print(sum_of_odds(100))
+
+##
+                
 
 
