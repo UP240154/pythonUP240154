@@ -37,3 +37,5 @@ print(Alumno)
 
 ##
 del Alumno
+
+print("Revisado")
