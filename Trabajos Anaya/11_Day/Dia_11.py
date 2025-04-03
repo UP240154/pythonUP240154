@@ -176,6 +176,34 @@ def calc_std(nums):
     return std
 print(calc_std([3,2,4,1,5,5,5,7]))
 
+##Level 3
 ##
+def is_prime(num):
+    for i in range(2, int(num**0.5)+1):
+        if (num%i)==0:
+            print(num,' no es primo')
+        else:
+            print(num,' es primo')
+    return ''
+print(is_prime(5))
+
+##
+def unique(lst):
+    return len(set(lst))==len(lst)
+print(unique([3,2,4,1,5,5,5,7]))
+
+##
+def same(lista):
+    list = iter(lista)
+    tipo = type(next(list))
+    if all((type(x) is tipo) for x in list): 
+        print(True)
+    else:
+        print(False)
+    return ''
+print(same([1,2,3,4,'true']))
+
+##
+
 
 
