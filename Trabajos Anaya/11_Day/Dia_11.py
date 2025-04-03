@@ -204,6 +204,15 @@ def same(lista):
 print(same([1,2,3,4,'true']))
 
 ##
+def is_valid_python_variable(var_name: str) -> bool:
 
+    if not var_name.isidentifier():
+        return False
+    
+    return True
+print(is_valid_python_variable('for'))
 
+##
+def paises(countri):
+    from
 
