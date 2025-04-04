@@ -94,4 +94,13 @@ def shuffle_list():
 shuffle_list()
 
 ##
+def numbers():
+    generated_numbers = []
+    while len(generated_numbers) < 7:
+        num = random.randint(0, 9)
+        if num not in generated_numbers:
+            generated_numbers.append(num)
+            print(num, end=',')
+numbers()
+
 
