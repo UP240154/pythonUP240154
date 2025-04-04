@@ -157,12 +157,12 @@ sentence = reduce(
 print(sentence)
 
 ##
-from lista_paises import countries  
-countries_with_land = list(filter(lambda country: 'land' in country.lower(), countries))
+from lista_paises import countries_2  
+countries_with_land = list(filter(lambda country: 'land' in country.lower(), countries_2))
 print(countries_with_land)
 
 ##
-from lista_paises import countries
+from lista_paises import countries_2
 def count_countries_by_letter(countries):
     country_count = {}
     for country in countries:
@@ -173,23 +173,23 @@ def count_countries_by_letter(countries):
             country_count[first_letter] = 1
     return country_count
 
-country_letter_count = count_countries_by_letter(countries)
+country_letter_count = count_countries_by_letter(countries_2)
 print(country_letter_count)
 
 ##
-from lista_paises import countries 
+from lista_paises import countries_2 
 def get_first_ten_countries(countries):
     return countries[:10] 
 
-first_ten_countries = get_first_ten_countries(countries)
+first_ten_countries = get_first_ten_countries(countries_2)
 print(first_ten_countries)
 
 ##
-from lista_paises import countries 
+from lista_paises import countries_2 
 def get_last_ten_countries(countries):
     return countries[-10:]  
 
-last_ten_countries = get_last_ten_countries(countries)
+last_ten_countries = get_last_ten_countries(countries_2)
 print(last_ten_countries)
 
 ##Level 3
