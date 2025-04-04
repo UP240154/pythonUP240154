@@ -213,7 +213,33 @@ def is_valid_python_variable(var_name: str) -> bool:
 print(is_valid_python_variable('for'))
 
 ##
+from countries_data import countries_1 
+
+def most_spoken_languages(countries, top_n=10):
+    from collections import Counter
+    language_counter = Counter()
+    for country in countries:
+        language_counter.update(country["languages"])
+    return language_counter.most_common(top_n)
+
+def most_populated_countries(countries, top_n=10):
+    sorted_countries = sorted(countries, key=lambda x: x["population"], reverse=True)
+    return sorted_countries[:top_n]
 
 
+print("Most Spoken Languages:")
+print(most_spoken_languages(countries_1, 10))
+
+from countries_data import countries_1 
+
+def most_populated_countries(countries, top_n=10):
+  
+    sorted_countries = sorted(countries, key=lambda x: x["population"], reverse=True)
+    return sorted_countries[:top_n]
+
+
+print("Most Populated Countries:")
+for country in most_populated_countries(countries_1, 10):
+    print(f"{country['name']}: {country['population']}")
 
 
