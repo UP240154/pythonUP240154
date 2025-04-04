@@ -4,11 +4,11 @@ import random
 import string
 
 def random_user():
-    characters = string.ascii_letters + string.digits  # Includes both letters and digits
-    user_id = str(''.join(random.choice(characters) for _ in range(6)))  # Generate a 6-character ID
+    characters = string.ascii_letters + string.digits 
+    user_id = str(''.join(random.choice(characters) for _ in range(6))) 
     return user_id
 
-print(random_user())  # Example usage
+print(random_user()) 
 ##
 import random
 import string
@@ -84,4 +84,14 @@ def generate_colors():
         print("Please enter a valid integer for the number of colors.")
 generate_colors()
 
+##Level 3
 ##
+def shuffle_list():
+    lista=['Potato', 'Tomato', 'Mango', 'Milk']
+    random.shuffle(lista)
+    print(lista)
+    return lista
+shuffle_list()
+
+##
+
