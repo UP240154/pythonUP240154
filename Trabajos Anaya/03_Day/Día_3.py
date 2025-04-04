@@ -158,10 +158,10 @@ total = (años * segundo)
 print("Tu tienes un total de:", total, "segundos")
 
 ##Write a Python script that displays the following table
-for i in range(1, 6):  # Genera números del 1 al 5
+for i in range(1, 6): 
     print(f"{i:<7} {1:<11} {i:<11} {i**2:<11} {i**3:<11}")
 
-for i in range(1, 6):  # Números del 1 al 5
+for i in range(1, 6):
     print(i, 1, i, i**2, i**3)
 
 print("Revisado")

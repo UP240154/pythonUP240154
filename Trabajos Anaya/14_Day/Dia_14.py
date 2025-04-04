@@ -193,7 +193,7 @@ last_ten_countries = get_last_ten_countries(countries_2)
 print(last_ten_countries)
 
 ##Level 3
-from countries_data import countries_1  # Importing the countries data
+from countries_data import countries_1 
 
 #
 def sort_countries_by_name(countries):
